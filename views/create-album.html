@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/static/img/2.ico">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Create album</title>
+</head>
+<body>
+<a class="text-back" href="/">Music albums</a>
+<div class="container">
+    <form action="/albums" class="form-create-album">
+        <input type="reset" value="Clear fields" class="input-clear-field">
+        <div class="form__input-wrp">
+            <label class="form__input" for="artist">Executor:</label>
+            <input class="form__input-field"
+                   type="text"
+                   id="artist"
+                   name="artist"
+                   placeholder="Executor name"
+                   autocomplete="off">
+        </div>
+        <div class="form__input-wrp">
+            <label class="form__input" for="year">Year:</label>
+            <input class="form__input-field"
+                   type="text"
+                   id="year"
+                   name="year"
+                   placeholder="Сreation year"
+                   autocomplete="off">
+        </div>
+        <div class="form__input-wrp">
+            <span class="form__input">Genre:</span>
+            <select class="form__input-field field-select" size="1" name="genre">
+                <option disabled selected>Choose a genre</option>
+                <option value="Rock and roll">Rock and roll</option>
+                <option value="Rhythm and blues">Rhythm and blues</option>
+                <option value="Art rock">Art rock</option>
+                <option value="Progressive rock">Progressive rock</option>
+                <option value="Psychedelic rock">Psychedelic rock</option>
+                <option value="Rhythm and blues">Rhythm and blues</option>
+                <option value="Jazz">Jazz</option>
+            </select>
+        </div>
+        <div class="form__input-wrp">
+            <label class="form__input" for="album">Album:</label>
+            <input class="form__input-field"
+                   type="text"
+                   id="album"
+                   name="album"
+                   placeholder="Album name"
+                   autocomplete="off">
+        </div>
+        <button class="button__create-album" id="js-create-album" type="button">Add album</button>
+    </form>
+    <p style="width: 400px;"></p>
+</div>
+
+<script src="/static/js/main.js"></script>
+</body>
+</html>

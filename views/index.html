@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/static/img/2.ico">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Music albums</title>
+</head>
+<body>
+<a class="text-back" href="/create">Create album</a>
+<div class="container">
+    <div class="artist-list__wrp">
+        <h1>Music albums</h1>
+        <ul class="artist-list__body" style="padding: 0;">
+            %for artist in artist_list:
+                <li class="artist-list__body-li">
+                    <a class="artist-list__body-link" href="/albums/{{ artist[0] }}">{{ artist[0] }}</a>
+                </li>
+            %end
+        </ul>
+    </div>
+    <p style="width: 400px;"></p>
+</div>
+</body>
+</html>

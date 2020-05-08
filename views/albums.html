@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/static/img/2.ico">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Albums</title>
+</head>
+<body>
+<a class="text-back" href="/">Music albums</a>
+<div class="container">
+    <div class="artist-list__wrp">
+        <h1>{{ quantity_albums }} albums for executor {{ artist }}.</h1>
+        <ul class="artist-list__body">
+            %for album in albums_list:
+                <li class="artist-list__body-li">{{ album.album }}</li>
+            %end
+        </ul>
+    </div>
+    <p style="width: 400px;"></p>
+</div>
+</body>
+</html>

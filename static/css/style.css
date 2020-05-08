@@ -1,0 +1,151 @@
+body {
+    background-image: url("/static/img/1.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    min-height: 700px;
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+}
+
+.artist-list__wrp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-list__title {
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 0 25px 0;
+}
+
+.artist-list__body {
+    font-size: 22px;
+    height: 700px;
+    flex-wrap: wrap;
+}
+
+.artist-list__body-li {
+    list-style-type: none;
+    text-align: center;
+}
+
+.artist-list__body-link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.text-back {
+    width: 160px;
+    font-size: 20px;
+    color: #ffffff;
+    margin: 25px 0 0 30px;
+    display: block;
+    opacity: 0.4;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text-back:hover {
+    opacity: 1;
+}
+
+.form-create-album {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin: 90px 0 0 0;
+    width: 500px;
+}
+
+.button__create-album {
+    align-self: center;
+    padding: 13px 55px;
+    box-sizing: border-box;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+    border-radius: 4px;
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.button__create-album:hover {
+    border: 1px solid white;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.button__create-album:active {
+    border: 1px solid black;
+    color: black;
+    background-color: white;
+}
+
+.button__create-album:focus {
+    outline: none;
+}
+
+.text-create-album {
+    font-size: 30px;
+    margin: 190px 0 0 0;
+}
+
+.form__input-wrp {
+    width: 100%;
+    margin: 0 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__input {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+}
+
+.form__input-field {
+    width: 370px;
+    height: 45px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.field-select {
+    color: black;
+}
+
+.field-select option {
+    color: black;
+}
+
+.input-clear-field {
+    border: none;
+    color: #ffffff;
+    background-color: black;
+    opacity: 0.5;
+    outline: none;
+    cursor: pointer;
+    align-self: flex-end;
+    margin: 0 0 20px 0;
+    font-size: 15px;
+}
+
+.input-clear-field:hover {
+    opacity: 1;
+}
+
+.input-clear-field:active {
+    opacity: 0.5;
+}
